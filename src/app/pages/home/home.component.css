@@ -1,0 +1,76 @@
+:host() {
+    height: 100%;
+    overflow-y: auto;
+    background-color: #f1f1f1;
+    display: block;
+}
+
+.home-bar {
+    background-color: #3f51b5;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.acao {
+    padding: 16px 32px;
+}
+
+.titulo {
+    color: white;
+    font-size: 14pt;
+}
+
+.produtos {
+    max-width: 960px;
+    margin: 32px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+app-produto-home {
+  min-height: 470px;
+  display: contents;
+  align-self: auto;
+}
+
+.clear {
+  display: block; clear: both;width: 100%;height: 1px;
+}
+.rodape {
+  padding: 1%;
+  text-align: right;
+  font-variant: small-caps;
+}
+
+/*   CAMPO PESQUISA */
+.pesquisa {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pesquisa:hover input {
+transition: transform .4s;
+transform: scale(1.4);
+z-index: 2000;
+box-shadow: 2px 2px 5px 4px rgb(63 81 181 / 19%), 0 1px 1px 0 rgb(63 81 181 / 19%), 0 1px 3px 0 rgb(63 81 181 / 19%);
+}
+
+input {
+  width: 680px;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16pt;
+  padding: 0 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.totalizador {color:#FFFFFF; font-weight: 300;margin-left: 2%;}
+.totalizador-rodape {font-weight: 300;text-align: center;margin-left: 20%;}

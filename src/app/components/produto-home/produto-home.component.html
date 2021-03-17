@@ -1,0 +1,15 @@
+  <!-- #### COMPONENTE ITENS/PRODUTOS #### -->
+  <mat-card class="item-cart" *ngFor="let item of produtos ">
+    <mat-card-header>
+        <mat-card-title>{{item?.nome}}</mat-card-title>
+        <mat-card-subtitle>cod: {{item?.id}} Marca: {{item?.marca | uppercase}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="item-img" [src]="item?.imagem" [alt]="item?.nome">
+    <mat-card-content>
+        <div style="color: #43a047;font-weight: bold;" fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="end center">
+            <mat-icon>monetization_on</mat-icon>
+            <span>{{item?.preco  | currency:'R$ ':true:'1.2-2'}} </span>
+        </div>
+    </mat-card-content>
+  </mat-card>
+

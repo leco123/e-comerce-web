@@ -1,0 +1,35 @@
+<div class="home-bar mat-elevation-z6">
+
+    <!-- #### LOGOMARCA DA LOJA #### -->
+    <div class="acao" fxLayout="row" fxLayoutAlign="end center">
+        <div fxFlex fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="16px" class="titulo">
+            <mat-icon>shopping_cart</mat-icon>
+            <span >E-commerce</span>
+        </div>
+        <button [routerLink]="['/login']" mat-raised-button>Login</button>
+    </div>
+
+    <!-- #### CAMPO DE PESQUISA #### -->
+    <div class="pesquisa">
+        <input class="mat-elevation-z2"
+               placeholder="O que você procura?"
+               type="search"
+               (keypress)="pressionarTecla($event)"
+               [(ngModel)]="valorInput"
+               [ngModelOptions]="{standalone: true}">
+      </div>
+
+      <!-- #### TOTALIZADOR DE ITENS #### -->
+      <h2 *ngIf="totalItens > 0" fxFlex fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="16px" class="totalizador"> Total de itens: {{totalItens}}</h2>
+</div>
+
+<!-- #### PRODUTOS #### -->
+<div class="produtos">
+    <app-produto-home></app-produto-home>
+</div>
+
+<h2 fxLayout="row" fxLayoutGap="16px" class="totalizador-rodape">Total de Itens: {{totalItens}}</h2>
+<!-- #### RODAPÉ #### -->
+<div class="clear"></div>
+<div class="rodape"> Desenvolvido por Alex de Carvalho</div>
+

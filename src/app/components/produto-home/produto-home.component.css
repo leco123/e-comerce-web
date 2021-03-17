@@ -1,0 +1,26 @@
+.item-cart {
+  background-color: #ececed!important;
+  border-radius: 5%;
+  flex-flow: column;
+  width: 90%;
+}
+
+.item-img {
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(100%);
+  height: 300px;
+}
+
+.item-cart:hover {
+  transition: transform .4s;
+  transform: scale(1.3);
+  z-index: 2000;
+  background-color: #ffffff!important;
+  box-shadow: 2px 2px 5px 4px rgb(63 81 181 / 19%), 0 1px 1px 0 rgb(63 81 181 / 19%), 0 1px 3px 0 rgb(63 81 181 / 19%);
+}
+.item-cart:hover .item-img{
+  filter: grayscale(0%);
+}
+
+
