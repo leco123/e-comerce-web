@@ -1,2 +1,2 @@
 # e-comerce-web
- Projeto final Alex de Carvalho, desenvolvido em angular 8 e-comece
+ Projeto final Alex de Carvalho, desenvolvido em angular 8 e-comerce
