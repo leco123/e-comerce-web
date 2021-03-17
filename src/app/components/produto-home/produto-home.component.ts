@@ -68,7 +68,7 @@ export class ProdutoHomeComponent implements OnInit {
    */
   private pesquisarItem(item: string) {
       this.produtoService.pesquisarItem(item).subscribe((listaItens: Produto[]) => {
-        if (listaItens.length) {
+        if (listaItens) {
           this.produtoService.setTtotalItens(listaItens.length);
           this.produtos = listaItens;
         }
